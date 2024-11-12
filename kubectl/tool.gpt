@@ -1,0 +1,12 @@
+Name: kubectl
+Context: env
+Description: Use this tool to execute kubectl commands
+Params: command: The complete set of flags and args minus --kubeconfig
+Params: kubeconfig: the file path to the kube config file to use. It will be passed to --kubeconfig
+
+#!/usr/bin/env bash -c "${GPTSCRIPT_TOOL_DIR}/bin/kubectl --kubeconfig=${KUBECONFIG} ${COMMAND}"
+
+---
+Name: env
+
+#!/usr/bin/env bash ${GPTSCRIPT_TOOL_DIR}/install.sh
