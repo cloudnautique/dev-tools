@@ -24,8 +24,7 @@ else
     echo "KUBECONFIG_FILE is not set, empty, or doesn't contain any data."
 fi
 ---
-
 Name: install
 
-#!/usr/bin/env bash ${GPTSCRIPT_TOOL_DIR}/install.sh
+#!/usr/bin/env node ${GPTSCRIPT_TOOL_DIR}/install.js
 
