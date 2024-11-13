@@ -5,7 +5,7 @@ const path = require('path');
 const https = require('https');
 
 // Define the installation directory and kubectl path
-const INSTALL_DIR = `${process.env.GPTSCRIPT_TOOL_DIR}/bin`;
+const INSTALL_DIR = `${process.env.GPTSCRIPT_WORKSPACE_DIR}/bin`;
 const KUBECTL_PATH = path.join(INSTALL_DIR, 'kubectl');
 
 // Check if kubectl is already installed

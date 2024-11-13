@@ -3,7 +3,7 @@ Context: env
 Description: Use this tool to execute kubectl commands
 Params: command: The complete set of flags and args minus --kubeconfig
 
-#!/usr/bin/env bash -c "${GPTSCRIPT_TOOL_DIR}/bin/kubectl --kubeconfig=${GPTSCRIPT_WORKSPACE_DIR}/kubeconfig.yaml ${COMMAND}"
+#!/usr/bin/env bash -c "${GPTSCRIPT_WORKSPACE_DIR}/bin/kubectl --kubeconfig=${GPTSCRIPT_WORKSPACE_DIR}/kubeconfig.yaml ${COMMAND}"
 
 ---
 Name: env
